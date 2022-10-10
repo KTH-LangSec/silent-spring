@@ -1,3 +1,6 @@
 [submodule "codeql/ql"]
 	path = codeql/ql
 	url = https://github.com/yuske/codeql.git
+[submodule "benchmark-popular-apps/parse-server"]
+	path = benchmark-popular-apps/parse-server
+	url = https://github.com/parse-community/parse-server
