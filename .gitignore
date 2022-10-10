@@ -1,0 +1,25 @@
+# CodeQL compilation caches
+.cache/
+
+# CodeQL databases
+db/
+db-app/
+*.testproj
+
+# CodeQL Test results
+*.actual
+#*.expected
+*.expected_
+!*.PoC.expected
+!*.PoC.ext.expected
+
+# NodeJS
+node_modules/
+
+# JB IDEs
+.idea/
+_ReSharper.Caches/
+
+# ODGen logs 
+scripts/logs/
+scripts/run_log.log

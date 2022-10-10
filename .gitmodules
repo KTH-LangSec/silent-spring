@@ -1,0 +1,3 @@
+[submodule "codeql/ql"]
+	path = codeql/ql
+	url = https://github.com/yuske/codeql.git
