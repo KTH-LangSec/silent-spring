@@ -618,14 +618,15 @@ function BuildODGenRow(libData) {
   let row = `${libData.libName.replace(/(_lib)$/, '')} (${libData.loc} LoC) | `;
 
   if (libData.expectedResult) {
-    var first = libData.expectedResult.values().next().value;
-    libData.expectedResult = TruncateByLineNumber(libData.expectedResult);
+    libData.expectedResult.major = TruncateByLineNumber(libData.expectedResult.major);
+    libData.expectedResult.minor = TruncateByLineNumber(libData.expectedResult.minor);
 
+    const expectedResultMinor = new Set([...libData.expectedResult.major, ...libData.expectedResult.minor])
     // TP + FP columns
     row += BuildTruePositiveAndFalsePositiveColumns(
       libData.loc,
       libData.assignmentResult, 
-      libData.expectedResult
+      expectedResultMinor
     );
   }
   else {
