@@ -4,3 +4,45 @@
 [submodule "benchmark-popular-apps/parse-server"]
 	path = benchmark-popular-apps/parse-server
 	url = https://github.com/parse-community/parse-server
+[submodule "benchmark-popular-apps/cli"]
+	path = benchmark-popular-apps/cli
+	url = https://github.com/npm/cli.git
+[submodule "benchmark-popular-apps/json-server"]
+	path = benchmark-popular-apps/json-server
+	url = https://github.com/typicode/json-server.git
+[submodule "benchmark-popular-apps/express"]
+	path = benchmark-popular-apps/express
+	url = https://github.com/expressjs/express.git
+[submodule "benchmark-popular-apps/meteor"]
+	path = benchmark-popular-apps/meteor
+	url = https://github.com/meteor/meteor.git
+[submodule "benchmark-popular-apps/strapi"]
+	path = benchmark-popular-apps/strapi
+	url = https://github.com/strapi/strapi.git
+[submodule "benchmark-popular-apps/Ghost"]
+	path = benchmark-popular-apps/Ghost
+	url = https://github.com/TryGhost/Ghost.git
+[submodule "benchmark-popular-apps/hexo"]
+	path = benchmark-popular-apps/hexo
+	url = https://github.com/hexojs/hexo.git
+[submodule "benchmark-popular-apps/hackathon-starter"]
+	path = benchmark-popular-apps/hackathon-starter
+	url = https://github.com/sahat/hackathon-starter.git
+[submodule "benchmark-popular-apps/koa"]
+	path = benchmark-popular-apps/koa
+	url = https://github.com/koajs/koa.git
+[submodule "benchmark-popular-apps/Rocket.Chat"]
+	path = benchmark-popular-apps/Rocket.Chat
+	url = https://github.com/RocketChat/Rocket.Chat.git
+[submodule "benchmark-popular-apps/sails"]
+	path = benchmark-popular-apps/sails
+	url = https://github.com/balderdashy/sails.git
+[submodule "benchmark-popular-apps/ember.js"]
+	path = benchmark-popular-apps/ember.js
+	url = https://github.com/emberjs/ember.js.git
+[submodule "benchmark-popular-apps/fastify"]
+	path = benchmark-popular-apps/fastify
+	url = https://github.com/fastify/fastify.git
+[submodule "benchmark-popular-apps/docsify"]
+	path = benchmark-popular-apps/docsify
+	url = https://github.com/docsifyjs/docsify.git
