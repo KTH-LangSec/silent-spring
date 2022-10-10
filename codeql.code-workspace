@@ -1,19 +1,19 @@
 {
 	"folders": [
 		{
-			"path": "../scripts"
+			"path": "scripts"
 		},
 		{
-			"path": "js-queries"
+			"path": "codeql/js-queries"
 		},
 		{
-			"path": "../db"
+			"path": "db"
 		},
 		{
-			"path": "../db-app"
+			"path": "db-app"
 		},
 		{
-			"path": "ql"
+			"path": "codeql/ql"
 		}
 	],
 	"settings": {
