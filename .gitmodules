@@ -49,3 +49,6 @@
 [submodule "codeql/ql-baseline"]
 	path = codeql/ql-baseline
 	url = https://github.com/yuske/codeql.git
+[submodule "benchmark-nodejs"]
+	path = benchmark-nodejs
+	url = https://github.com/nodejs/node.git

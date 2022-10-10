@@ -16,6 +16,7 @@ db-baseline/
 
 # NodeJS
 node_modules/
+benchmark-npm-packages/
 
 # JB IDEs
 .idea/
