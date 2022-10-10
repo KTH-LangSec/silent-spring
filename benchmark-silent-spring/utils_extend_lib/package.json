@@ -1,0 +1,16 @@
+{
+  "name": "utils_extend_lib",
+  "version": "1.0.0",
+  "main": "utils_extend.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "utils-extend": "1.0.8"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

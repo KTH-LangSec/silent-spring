@@ -1,0 +1,16 @@
+{
+  "name": "lodash_lib",
+  "version": "1.0.0",
+  "main": "lodash.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.11"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

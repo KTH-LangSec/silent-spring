@@ -1,0 +1,16 @@
+{
+  "name": "smart_extend_lib",
+  "version": "1.0.0",
+  "main": "smart_extend.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "smart-extend": "1.7.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

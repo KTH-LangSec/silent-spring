@@ -1,0 +1,17 @@
+{
+  "name": "nconf_toml_lib",
+  "version": "1.0.0",
+  "main": "nconf_toml.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "nconf-toml": "0.0.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

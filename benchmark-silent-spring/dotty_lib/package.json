@@ -1,0 +1,16 @@
+{
+  "name": "dotty_lib",
+  "version": "1.0.0",
+  "main": "dotty.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotty": "0.0.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

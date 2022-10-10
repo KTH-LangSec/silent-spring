@@ -1,0 +1,16 @@
+{
+  "name": "promisehelpers_lib",
+  "version": "1.0.0",
+  "main": "promisehelpers.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "promisehelpers": "0.0.5"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

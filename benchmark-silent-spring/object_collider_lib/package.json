@@ -1,0 +1,16 @@
+{
+  "name": "object_collider_lib",
+  "version": "1.0.0",
+  "main": "object_collider.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "object-collider": "1.0.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

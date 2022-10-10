@@ -1,0 +1,16 @@
+{
+  "name": "node-forge_lib",
+  "version": "1.0.0",
+  "main": "node-forge.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-forge": "0.9.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

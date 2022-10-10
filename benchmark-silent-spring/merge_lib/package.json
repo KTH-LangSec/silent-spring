@@ -1,0 +1,16 @@
+{
+  "name": "merge_lib",
+  "version": "1.0.0",
+  "main": "merge.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "merge": "2.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

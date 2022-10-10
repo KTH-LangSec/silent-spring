@@ -1,0 +1,16 @@
+{
+  "name": "json8_merge_patch_lib",
+  "version": "1.0.0",
+  "main": "json8_merge_patch.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json8-merge-patch": "1.0.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

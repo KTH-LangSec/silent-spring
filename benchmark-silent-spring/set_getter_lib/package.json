@@ -1,0 +1,16 @@
+{
+  "name": "set_getter_lib",
+  "version": "1.0.0",
+  "main": "set_getter.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "set-getter": "0.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

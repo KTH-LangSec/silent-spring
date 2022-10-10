@@ -1,0 +1,16 @@
+{
+  "name": "just_extend_lib",
+  "version": "1.0.0",
+  "main": "just_extend.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "just-extend": "3.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

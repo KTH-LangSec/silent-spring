@@ -1,0 +1,16 @@
+{
+  "name": "json_ptr_lib",
+  "version": "1.0.0",
+  "main": "json_ptr.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-ptr": "1.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

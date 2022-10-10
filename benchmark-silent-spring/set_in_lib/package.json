@@ -1,0 +1,16 @@
+{
+  "name": "set_in_lib",
+  "version": "1.0.0",
+  "main": "set_in.1.1.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "set-in": "2.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

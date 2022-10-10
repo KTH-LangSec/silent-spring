@@ -1,0 +1,16 @@
+{
+  "name": "object_path_set_lib",
+  "version": "1.0.0",
+  "main": "object_path_set.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "object-path-set": "1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

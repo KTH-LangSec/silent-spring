@@ -1,0 +1,16 @@
+{
+  "name": "set_object_value_lib",
+  "version": "1.0.0",
+  "main": "set_object_value.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "set-object-value": "0.0.5"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

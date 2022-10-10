@@ -1,0 +1,16 @@
+{
+  "name": "set_or_get_lib",
+  "version": "1.0.0",
+  "main": "set_or_get.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "set-or-get": "1.2.10"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

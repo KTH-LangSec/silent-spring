@@ -1,0 +1,16 @@
+{
+  "name": "deep_override_lib",
+  "version": "1.0.0",
+  "main": "deep_override.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "deep-override": "1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

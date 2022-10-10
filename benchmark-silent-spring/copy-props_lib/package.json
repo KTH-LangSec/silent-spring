@@ -1,0 +1,16 @@
+{
+  "name": "copy-props_lib",
+  "version": "1.0.0",
+  "main": "copy-props.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "copy-props": "2.0.4"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

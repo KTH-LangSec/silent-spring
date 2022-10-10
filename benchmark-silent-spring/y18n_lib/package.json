@@ -1,0 +1,16 @@
+{
+  "name": "y18n_lib",
+  "version": "1.0.0",
+  "main": "y18n.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "y18n": "3.2.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

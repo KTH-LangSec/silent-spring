@@ -1,0 +1,13 @@
+{
+  "id": " CVE-2021-25953",
+  "dependencies": {
+    "putil-merge": "3.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-PUTILMERGE-1317077",
+    "source2": "https://github.com/advisories/GHSA-9x7m-9hpg-xxmw"
+  },
+  "fixedVersion": "3.7.0",
+  "fixCommit": "https://github.com/panates/putil-merge/commit/a8f5087faaa034cc2dc2e8070c13014ad6a34043",
+  "sink": "lib/merge.js:72:19"
+}

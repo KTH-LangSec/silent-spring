@@ -1,0 +1,16 @@
+{
+  "name": "gedi_lib",
+  "version": "1.0.0",
+  "main": "gedi.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gedi": "1.6.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

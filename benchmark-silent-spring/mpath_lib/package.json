@@ -1,0 +1,16 @@
+{
+  "name": "mpath_lib",
+  "version": "1.0.0",
+  "main": "mpath.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mpath": "0.4.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "property_expr_lib",
+  "version": "1.0.0",
+  "main": "property_expr.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "property-expr": "2.0.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

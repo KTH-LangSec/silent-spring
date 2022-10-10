@@ -1,0 +1,13 @@
+{
+  "id": "",
+  "dependencies": {
+    "objnest": "5.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-OBJNEST-1041787",
+    "source2": "https://github.com/advisories/GHSA-4q97-fh3f-j294"
+  },
+  "fixedVersion": "5.1.0",
+  "fixCommit": "https://github.com/okunishinishi/node-objnest/commit/c541e1a775b562d63402a14dac9f8cbc52b116d7",
+  "sink": "./set.js:36"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "nis_utils_lib",
+  "version": "1.0.0",
+  "main": "nis_utils.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nis-utils": "0.6.10"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

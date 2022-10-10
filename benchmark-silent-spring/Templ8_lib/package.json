@@ -1,0 +1,16 @@
+{
+  "name": "templ8_lib",
+  "version": "1.0.0",
+  "main": "Templ8.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "Templ8": "0.7.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

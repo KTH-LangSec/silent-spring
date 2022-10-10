@@ -1,0 +1,16 @@
+{
+  "name": "madlib_object_utils_lib",
+  "version": "1.0.0",
+  "main": "madlib_object_utils.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "madlib-object-utils": "0.1.6"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

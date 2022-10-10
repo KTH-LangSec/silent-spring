@@ -1,0 +1,16 @@
+{
+  "name": "dot_object_lib",
+  "version": "1.0.0",
+  "main": "dot_object.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot-object": "2.1.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

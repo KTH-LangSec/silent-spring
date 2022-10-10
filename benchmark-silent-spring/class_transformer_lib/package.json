@@ -1,0 +1,16 @@
+{
+  "name": "class_transformer_lib",
+  "version": "1.0.0",
+  "main": "class_transformer.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "class-transformer": "0.1.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

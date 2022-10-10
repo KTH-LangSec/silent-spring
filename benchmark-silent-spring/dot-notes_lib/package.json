@@ -1,0 +1,16 @@
+{
+  "name": "dot-notes_lib",
+  "version": "1.0.0",
+  "main": "dot-notes.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dot-notes": "3.2.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

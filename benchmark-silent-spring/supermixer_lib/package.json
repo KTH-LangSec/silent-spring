@@ -1,0 +1,16 @@
+{
+  "name": "supermixer_lib",
+  "version": "1.0.0",
+  "main": "supermixer.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "supermixer": "1.0.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,13 @@
+{
+  "id": "CVE-2021-25916",
+  "dependencies": {
+    "patchmerge": "1.0.0"
+  },
+  "links": {
+    "source1": "https://security.snyk.io/vuln/SNYK-JS-PATCHMERGE-1086585",
+    "source2": "https://github.com/advisories/GHSA-84g3-cv89-m9gm"
+  },
+  "fixedVersion": "1.0.2",
+  "fixCommit": "https://github.com/pjshumphreys/patchmerge/commit/5b383c537eae7a00ebd26d3f7211dac99ddecb12",
+  "sink": "index.js:93:24"
+}

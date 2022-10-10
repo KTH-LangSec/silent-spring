@@ -1,0 +1,16 @@
+{
+  "name": "safetydance_lib",
+  "version": "1.0.0",
+  "main": "safetydance.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "safetydance": "2.0.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

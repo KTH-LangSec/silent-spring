@@ -1,0 +1,16 @@
+{
+  "name": "merge_deep_lib",
+  "version": "1.0.0",
+  "main": "merge_deep.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "merge-deep": "3.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

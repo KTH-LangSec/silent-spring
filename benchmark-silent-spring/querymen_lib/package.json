@@ -1,0 +1,16 @@
+{
+  "name": "querymen_lib",
+  "version": "1.0.0",
+  "main": "querymen.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "querymen": "2.1.3"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

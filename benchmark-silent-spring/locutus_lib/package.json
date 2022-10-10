@@ -1,0 +1,16 @@
+{
+  "name": "locutus_lib",
+  "version": "1.0.0",
+  "main": "locutus.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "locutus": "2.0.11"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

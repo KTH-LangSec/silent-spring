@@ -1,0 +1,15 @@
+{
+  "name": "keyget_lib",
+  "version": "1.0.0",
+  "main": "keyget.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "keyget": "2.2.0"
+  },
+  "keywords": [],
+  "description": ""
+}

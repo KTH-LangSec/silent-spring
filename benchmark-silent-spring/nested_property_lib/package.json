@@ -1,0 +1,16 @@
+{
+  "name": "nested_property_lib",
+  "version": "1.0.0",
+  "main": "nested_property.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nested-property": "0.0.5"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "a101_lib",
+  "version": "1.0.0",
+  "main": "a101.PoC.js",
+  "dependencies": {
+    "101": "1.6.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": ""
+}

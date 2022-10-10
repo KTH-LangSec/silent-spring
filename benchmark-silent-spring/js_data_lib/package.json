@@ -1,0 +1,16 @@
+{
+  "name": "js_data_lib",
+  "version": "1.0.0",
+  "main": "js_data.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "js-data": "3.0.8"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

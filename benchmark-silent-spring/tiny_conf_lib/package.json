@@ -1,0 +1,16 @@
+{
+  "name": "tiny_conf_lib",
+  "version": "1.0.0",
+  "main": "tiny_conf.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tiny-conf": "1.1.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

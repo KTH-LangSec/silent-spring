@@ -1,0 +1,16 @@
+{
+  "name": "ini_parser_lib",
+  "version": "1.0.0",
+  "main": "ini_parser.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ini-parser": "0.0.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

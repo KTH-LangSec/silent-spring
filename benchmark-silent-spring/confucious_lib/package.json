@@ -1,0 +1,16 @@
+{
+  "name": "confucious_lib",
+  "version": "1.0.0",
+  "main": "confucious.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "confucious": "0.0.12"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

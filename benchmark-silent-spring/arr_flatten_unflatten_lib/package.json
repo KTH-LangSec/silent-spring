@@ -1,0 +1,16 @@
+{
+  "name": "arr_flatten_unflatten_lib",
+  "version": "1.0.0",
+  "main": "arr_flatten_unflatten.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "arr-flatten-unflatten": "1.1.4"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

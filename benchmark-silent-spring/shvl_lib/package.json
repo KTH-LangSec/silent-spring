@@ -1,0 +1,16 @@
+{
+  "name": "shvl_lib",
+  "version": "1.0.0",
+  "main": "shvl.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "shvl": "2.0.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

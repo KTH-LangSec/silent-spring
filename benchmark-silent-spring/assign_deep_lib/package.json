@@ -1,0 +1,16 @@
+{
+  "name": "assign_deep_lib",
+  "version": "1.0.0",
+  "main": "assign_deep.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assign-deep": "1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "defaults_deep_lib",
+  "version": "1.0.0",
+  "main": "defaults_deep.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "defaults-deep": "0.2.4"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

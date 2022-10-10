@@ -1,0 +1,16 @@
+{
+  "name": "mout_lib",
+  "version": "1.0.0",
+  "main": "mout.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mout": "2.0.0-alpha.1"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,16 @@
+{
+  "name": "asciitable_lib",
+  "version": "1.0.0",
+  "main": "asciitable.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asciitable.js": "1.0.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

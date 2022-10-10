@@ -1,0 +1,16 @@
+{
+  "name": "nestie_lib",
+  "version": "1.0.0",
+  "main": "nestie.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nestie": "1.0.0"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}

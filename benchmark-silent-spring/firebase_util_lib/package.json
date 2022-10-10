@@ -1,0 +1,16 @@
+{
+  "name": "firebase_util_lib",
+  "version": "1.0.0",
+  "main": "firebase_util.PoC.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@firebase/util": "0.3.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
