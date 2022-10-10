@@ -577,19 +577,21 @@ function BuildBaselineRow(libData) {
   // Library column
   let row = `${libData.libName.replace(/(_lib)$/, '')} (${libData.loc} LoC) | `;
 
-  var first = libData.expectedResult.values().next().value;
-  if (!first.match(/[^:]+:\d+:\d+:\d+:\d+/)) {
-    libData.expectedResult = TruncateByLineNumber(libData.expectedResult);
+  if (libData.expectedResult) {
+    libData.expectedResult.major = TruncateByLineNumber(libData.expectedResult.major);
+    libData.expectedResult.minor = TruncateByLineNumber(libData.expectedResult.minor);
     libData.assignmentResult = TruncateByLineNumber(libData.assignmentResult);
     libData.functionResult = TruncateByLineNumber(libData.functionResult);
     libData.mergeCallResult = TruncateByLineNumber(libData.mergeCallResult);
   }
 
+  const expectedResultMinor = new Set([...libData.expectedResult.major, ...libData.expectedResult.minor])
+
   // TP: ...Assignment.ql + FP: ...Assignment.ql columns
   row += BuildTruePositiveAndFalsePositiveColumns(
     libData.loc,
     libData.assignmentResult, 
-    libData.expectedResult
+    expectedResultMinor
   );
 
   row += ' | ';
@@ -597,7 +599,7 @@ function BuildBaselineRow(libData) {
   row += BuildTruePositiveAndFalsePositiveColumns(
     libData.loc,
     libData.functionResult, 
-    libData.expectedResult
+    expectedResultMinor
   );  
 
   row += ' | ';
@@ -605,7 +607,7 @@ function BuildBaselineRow(libData) {
   row += BuildTruePositiveAndFalsePositiveColumns(
     libData.loc,
     libData.mergeCallResult, 
-    libData.expectedResult
+    expectedResultMinor
   );
 
   return row;

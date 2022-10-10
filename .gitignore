@@ -4,6 +4,7 @@
 # CodeQL databases
 db/
 db-app/
+db-baseline/
 *.testproj
 
 # CodeQL Test results

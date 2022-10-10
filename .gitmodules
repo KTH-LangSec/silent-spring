@@ -46,3 +46,6 @@
 [submodule "benchmark-popular-apps/docsify"]
 	path = benchmark-popular-apps/docsify
 	url = https://github.com/docsifyjs/docsify.git
+[submodule "codeql/ql-baseline"]
+	path = codeql/ql-baseline
+	url = https://github.com/yuske/codeql.git
