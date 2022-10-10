@@ -1,0 +1,7 @@
+{
+  "name": "jquery-deparam",
+  "version": "0.5.2",
+  "main": "jquery-deparam.js",
+  "ignore": ["test", "gulpfile.js"],
+  "license": "MIT"
+}

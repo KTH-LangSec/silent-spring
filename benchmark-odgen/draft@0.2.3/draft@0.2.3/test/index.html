@@ -1,0 +1,41 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <script src="../draft.js"></script>
+  </head>
+    <body>
+      <div class="container">
+        <div class="hero-unit">
+          <h1>draft</h1>
+        </div>
+      </div>
+      <script type="text/javascript">
+        var draft = draft || require('draft')
+        var UserSchema, PostSchema, User, Post, werle, post
+        // define the user schema
+        UserSchema = draft.createSchema({ name: String, email: String, networks: [Object] });
+        // create the model for use in the post schema
+        User = UserSchema.createModel();
+        // create the post schema to add to the user schema
+        PostSchema = draft.createSchema({ owner: User, content: String });
+        // add profile object with friends collection set to User type
+        UserSchema.add({ profile: { friends: [User] }});
+        // create Post model
+        Post = PostSchema.createModel();
+        // add posts collection to user schema and use Post model as type
+        UserSchema.add({ posts: [Post] });
+        // create 'werle' user
+        werle = new User({ name: 'werle', email: 'joseph@werle.io' });
+        // create post owned by 'werle'
+        post  = new Post({ owner: werle, content: "I like draft :)"});
+        // push post to user object
+        werle.posts.push(post);
+      </script>
+  </body>
+</html>

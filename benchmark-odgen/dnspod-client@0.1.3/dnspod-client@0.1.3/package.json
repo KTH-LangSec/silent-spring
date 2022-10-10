@@ -1,0 +1,29 @@
+{
+  "name": "dnspod-client",
+  "version": "0.1.3",
+  "description": "A DNSPOD Client",
+  "keywords": [
+    "dnspod", "ddns", "get ip"
+  ],
+  "homepage": "http://ohsc.github.com/dnspod-client",
+  "author": "Chao Shen <shen218@gmail.com>",
+  "repository": {
+    "type": "git", "url": "http://github.com/ohsc/dnspod-client.git"
+  },
+  "bugs" : {
+    "url" : "http://github.com/ohsc/dnspod-client/issues"
+  },
+  "licenses" : [{
+    "type" : "BSD",
+    "url" : "http://github.com/ohsc/dnspod-client/raw/master/LICENSE.md"
+  }],
+  "main": "./src/dnspod.js",
+  "devDependencies": {
+    "mocha": ">= 1.5.0",
+    "jslint": ">= 0.1.9"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/test.js",
+    "lint": "find . -name '*.js' -not -regex './node_modules.*' -print0 | xargs -0 ./node_modules/.bin/jslint --sloppy --stupid --node --color --git"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "grunt-util-property",
+  "description": "Grunt util for getting and setting properties",
+  "version": "0.0.2",
+  "author": {
+    "name": "Mikael Karon",
+    "email": "mikael@karon.se"
+  },
+  "maintainers": [
+    {
+      "name": "Mikael Karon",
+      "web": "http://github.com/mikaelkaron"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikaelkaron/grunt-util-property.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikaelkaron/grunt-util-property/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://mikael.mit-license.org/"
+    }
+  ],
+  "scripts": {
+    "release": "standard-version"
+  },
+  "main": "main.js",
+  "peerDependencies": {
+    "grunt": ">=0.4.1"
+  },
+  "devDependencies": {
+    "standard-version": "^4.3.0"
+  }
+}

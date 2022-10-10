@@ -1,0 +1,29 @@
+{
+  "name": "draft",
+  "version": "0.2.3",
+  "description": "Construct Object schemas and models",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": "git://github.com/jwerle/draft.git",
+  "keywords": [
+    "object",
+    "schema",
+    "model"
+  ],
+  "author": "Joseph Werle <joseph.werle@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  },
+  "testling": {
+    "harness" : "mocha",
+    "files": "test/*.js",
+    "browsers": {
+      "ie" : [ 10 ],
+      "ff" : [ 17, 18, 19 ],
+      "chrome" : [ 20, 21, 22, 23, 24, 25 ]
+    }
+  }
+}

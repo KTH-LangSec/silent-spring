@@ -1,0 +1,50 @@
+<article class="content-container">
+	{{avatar user class="content-avatar"}}
+	<div class="content-box">
+		<header class="content-header">
+			<div class="meta">
+				<p>{{userLink user}} opened {{ticketLink this label=(concat "ticket #" id)}} {{timeSince created}}</p>
+				{{#if (not (equal created edited))}}
+					<p>most recently updated {{timeSince edited}}</p>
+				{{/if}}
+			</div>
+			<h2>{{title}}</h2>
+		</header>
+		<div class="content-body">
+			{{{body}}}
+		</div>
+	</div>
+</article>
+
+{{#each comments}}
+<article class="content-container" id="comment-{{id}}">
+	{{avatar user class="content-avatar"}}
+	<div class="content-box" >
+		<header class="content-header">
+			<div class="meta">
+				<p>{{userLink user}} commented {{timeSince created}}</p>
+			</div>
+		</header>
+		<div class="content-body">
+			{{{body}}}
+		</div>
+	</div>
+</article>
+{{/each}}
+
+{{#if (hasPermission "TICKET:CREATE")}}
+<div class="content-container" id="comment-new">
+	{{avatar activeUser class="content-avatar"}}
+	<div class="content-box">
+		<form method="post" action="/tickets/{{id}}/comments">
+			<header class="content-header">
+				<label for="body">Leave a comment:</label>
+			</header>
+			<div class="content-body">
+				<textarea name="body" id="body"></textarea>
+				<button type="submit">Comment</button>
+			</div>
+		</form>
+	</div>
+</div>
+{{/if}}

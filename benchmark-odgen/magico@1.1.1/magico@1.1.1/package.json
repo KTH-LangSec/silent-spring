@@ -1,0 +1,29 @@
+{
+  "name": "magico",
+  "version": "1.1.1",
+  "description": "Magic object accessor for javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyfeyaj/magico.git"
+  },
+  "keywords": [
+    "magico",
+    "magic",
+    "object",
+    "accessor"
+  ],
+  "author": "lyfeyaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyfeyaj/magico/issues"
+  },
+  "homepage": "https://github.com/lyfeyaj/magico#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}

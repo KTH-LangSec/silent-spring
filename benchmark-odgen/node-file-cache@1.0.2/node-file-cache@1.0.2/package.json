@@ -1,0 +1,42 @@
+{
+  "_from": "node-file-cache@1.0.2",
+  "_id": "node-file-cache@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-I34zyiT9o2Doa/YYt1yrYZ7y7OM=",
+  "_location": "/node-file-cache",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "node-file-cache@1.0.2",
+    "name": "node-file-cache",
+    "escapedName": "node-file-cache",
+    "rawSpec": "1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "1.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node-file-cache/-/node-file-cache-1.0.2.tgz",
+  "_shasum": "237e33ca24fda360e86bf618b75cab619ef2ece3",
+  "_spec": "node-file-cache@1.0.2",
+  "_where": "/home/lsong18/packages/pp/packages",
+  "author": {
+    "name": "Ondra"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "lowdb": "^0.14.0"
+  },
+  "deprecated": false,
+  "description": "Simple node cache module",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "node-file-cache",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.2"
+}

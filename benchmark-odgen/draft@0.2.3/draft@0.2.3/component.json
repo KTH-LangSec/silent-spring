@@ -1,0 +1,25 @@
+{
+  "name": "draft",
+  "repo": "jwerle/draft",
+  "description": "Construct Object schemas and models",
+  "version": "0.2.3",
+  "keywords": [
+    "object",
+    "schema",
+    "model"
+  ],
+  "dependencies": {
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "build"
+  ]
+}

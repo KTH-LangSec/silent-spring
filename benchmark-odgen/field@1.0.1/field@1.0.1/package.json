@@ -1,0 +1,66 @@
+{
+  "_from": "field@1.0.1",
+  "_id": "field@1.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-qmWb8A7OmqaColP/VnRQIJ8oBB8=",
+  "_location": "/field",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "field@1.0.1",
+    "name": "field",
+    "escapedName": "field",
+    "rawSpec": "1.0.1",
+    "saveSpec": null,
+    "fetchSpec": "1.0.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/field/-/field-1.0.1.tgz",
+  "_shasum": "aa659bf00ece9aa682a253ff567450209f28041f",
+  "_spec": "field@1.0.1",
+  "_where": "/home/lsong18/packages/pp/packages",
+  "author": {
+    "name": "JP Richardson",
+    "email": "jprichardson@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/jprichardson/field/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Easily set, get, stub values of a field in a JavaScript object.",
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "homepage": "https://github.com/jprichardson/field#readme",
+  "keywords": [
+    "stub",
+    "field",
+    "fields",
+    "set",
+    "get",
+    "object",
+    "property",
+    "properties",
+    "accessor",
+    "accessors",
+    "configuration",
+    "config"
+  ],
+  "license": "MIT",
+  "main": "./lib/field.js",
+  "name": "field",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jprichardson/field.git"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "version": "1.0.1"
+}

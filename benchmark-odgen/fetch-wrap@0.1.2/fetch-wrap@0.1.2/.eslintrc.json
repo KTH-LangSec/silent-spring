@@ -1,0 +1,43 @@
+{
+  "extends": "standard",
+  "plugins": [
+    "standard"
+  ],
+  "rules": {
+    "semi": [2, "always"],
+    "space-before-function-paren": [2, "never"],
+    "max-len": [2, 120, 2],
+    "camelcase": [2, {"properties": "always"}],
+    "linebreak-style": [2, "unix"],
+    "new-cap": [2, { "newIsCap": true, "capIsNew": true }],
+    "arrow-body-style": [2, "as-needed"],
+    "arrow-parens": [2, "as-needed"],
+    "prefer-arrow-callback": 0,
+    "prefer-template": 0
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "binaryLiterals": false,
+      "blockBindings": false,
+      "defaultParams": false,
+      "forOf": false,
+      "generators": false,
+      "objectLiteralComputedProperties": false,
+      "objectLiteralDuplicateProperties": false,
+      "objectLiteralShorthandMethods": false,
+      "objectLiteralShorthandProperties": false,
+      "octalLiterals": false,
+      "regexUFlag": false,
+      "regexYFlag": false,
+      "templateStrings": false,
+      "unicodeCodePointEscapes": false,
+      "jsx": false
+    }
+  },
+  "globals": {
+  },
+  "env": {
+    "browser": false,
+    "node": true
+  }
+}

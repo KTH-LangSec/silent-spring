@@ -1,0 +1,42 @@
+{
+  "_from": "bayrell-nodejs@0.8.0",
+  "_id": "bayrell-nodejs@0.8.0",
+  "_inBundle": false,
+  "_integrity": "sha512-MPRLQMQ5E4fR8/AOo6PKSfD9sUQx0MhSB0DqnX8t0z4yqXamN1VvUA2LMaB7bn/Ud3myswfhh1TLqywfuyjsAg==",
+  "_location": "/bayrell-nodejs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "bayrell-nodejs@0.8.0",
+    "name": "bayrell-nodejs",
+    "escapedName": "bayrell-nodejs",
+    "rawSpec": "0.8.0",
+    "saveSpec": null,
+    "fetchSpec": "0.8.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/bayrell-nodejs/-/bayrell-nodejs-0.8.0.tgz",
+  "_shasum": "1cf59a319fdc41efa6c9281b0253130af7525206",
+  "_spec": "bayrell-nodejs@0.8.0",
+  "_where": "/home/jianwei/jianwei/proto",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Ildar Bikmamatov",
+      "email": "support@bayrell.org"
+    }
+  ],
+  "deprecated": false,
+  "description": "Bayrell Runtime Library",
+  "files": [
+    "*.js"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "bayrell-nodejs",
+  "version": "0.8.0"
+}

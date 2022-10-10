@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{{app.title}}</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+{{#if activeUser}}
+	logged in as {{activeUser.username}}; <a href="/logout">logout</a>
+{{else}}
+	<a href="/login">login</a>
+{{/if}}
+
+<div class="main">
+{{{body}}}
+</div>
+
+</body>
+</html>

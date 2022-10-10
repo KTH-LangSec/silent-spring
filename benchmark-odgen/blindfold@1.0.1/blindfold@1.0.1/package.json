@@ -1,0 +1,23 @@
+{
+  "name": "blindfold",
+  "version": "1.0.1",
+  "description": "get and set properties using dot syntax strings",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bookchin/blindfold.git"
+  },
+  "author": "Gordon Hall <gordon@gordonwritescode.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bookchin/blindfold/issues"
+  },
+  "homepage": "https://github.com/bookchin/blindfold",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "object-helpers",
+  "version": "0.0.4",
+  "description": "object helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasikanth513/object-props.git"
+  },
+  "author": "“Sasikanth <“sasi.kanth80@gmail.com”> (http://sasi.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sasikanth513/object-props/issues"
+  },
+  "keywords": [
+    "obj",
+    "helpers",
+    "object",
+    "prop",
+    "property",
+    "dot",
+    "path",
+    "get",
+    "set",
+    "delete",
+    "del",
+    "access",
+    "notation",
+    "dotty"
+  ],
+  "homepage": "https://github.com/sasikanth513/object-props#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "fun-map",
+  "version": "3.3.1",
+  "description": " a few functional utilities for pretending that JS objects are Clojure string maps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/fun-map.git"
+  },
+  "keywords": [
+    "clojure",
+    "functional",
+    "object",
+    "utilities"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nathan7/fun-map/issues"
+  },
+  "homepage": "https://github.com/nathan7/fun-map"
+}

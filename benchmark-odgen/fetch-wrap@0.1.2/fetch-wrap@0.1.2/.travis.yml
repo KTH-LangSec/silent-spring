@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "stable"
+after_success:
+  - npm run cover-publish
+addons:
+  code_climate:
+    repo_token:
+      # # get your token from https://codeclimate.com/github/benjamine/fetch-wrap
+      # gem install travis
+      # travis encrypt <projecttoken>
+      secure: "QlZZAmGY9XcL0ecHF7XRuMmTCc0e91+aKftZKt/RuxNOuFa784YAqcp8orOd3ePHDrFwq5Nf+AvlyCQ2wGMheVUqSb+Z7MjD+tm1KA4yyJXCBD8I0/sWuF6hqlKoYUopgKz7Uy1/3BqKp0Db6gKfz/AIvWZ3hXpUxvA+kq1dm1cUvEDofSEFnZfmwPXm/71QrWJCEYqMfcRbms6PPdSK64OYmdDq+Fi3J0fi48nsmYWXmGwCIXUDnIOSQnpQHiyl2IGeLO8yTU2IoVM5A7bzAnG0JDtrxSi2dzRxY0q8mBacj+8JOJTEx6sF0+KCmeFo5PKDMyMjCFXREf5VYvovB1J8RDDsErmz2+69GxYpFq4jGX6A1FMIAODLtforFuKzdEosz/2qqqKZtbBTc2E3YSTTToTVBo0qLHIHXQGa0TAKjz1l5zID3/D7mixZ2PO9GMPWHQXOaIOeW1PX+Y9kpUrwD5EtHvb90GB4PYU1NdcTRjsj5Ly9oftZgAxMtFQQHQ8tcb1J57qG0lsd7LCth+uc2MJIe59dxyFkYxxkGIXwBrwJaGjC0ZnHJHd/rdTGvcHY+7LYZePF/4atzoRjVVYnDS9LshBn7wAlS19m9BXJNY9W5U2mKlUL46TlzXo9RWyN5MTHigC1By7BBMY1qKETF86VXlmXKdoUe1jktPQ="

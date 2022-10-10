@@ -1,0 +1,54 @@
+{
+  "_from": "propper@1.0.3",
+  "_id": "propper@1.0.3",
+  "_inBundle": false,
+  "_integrity": "sha512-JiphDbn2afwuT1JH/MrTmyXHgi+yT5j/ByxfPRKHBzmAxFLo8ZjowVKvCju1ndGQwrjEu/W0nIlqzxCyTps2/A==",
+  "_location": "/propper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "propper@1.0.3",
+    "name": "propper",
+    "escapedName": "propper",
+    "rawSpec": "1.0.3",
+    "saveSpec": null,
+    "fetchSpec": "1.0.3"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/propper/-/propper-1.0.3.tgz",
+  "_shasum": "2f6330572fb09bf817f5015778bd88c87d37f165",
+  "_spec": "propper@1.0.3",
+  "_where": "/home/jianwei/jianwei/proto",
+  "author": {
+    "name": "Allain Lalonde",
+    "email": "allain.lalonde@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/allain/propper/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A tool for getting and setting object properties using dot notation, path notation, and arrays to speficy properties.",
+  "devDependencies": {
+    "tape": "^4.0.2"
+  },
+  "homepage": "https://github.com/allain/propper#readme",
+  "keywords": [
+    "properties"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "propper",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/allain/propper.git"
+  },
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "version": "1.0.3"
+}

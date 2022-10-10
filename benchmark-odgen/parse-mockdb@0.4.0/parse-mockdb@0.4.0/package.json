@@ -1,0 +1,65 @@
+{
+  "name": "parse-mockdb",
+  "version": "0.4.0",
+  "description": "Parse JS SDK Mocked Database",
+  "main": "src/parse-mockdb.js",
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint && mocha ./test/test",
+    "lint": "eslint src/** test/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hustle/parse-mockdb.git"
+  },
+  "keywords": [
+    "parse",
+    "parsesdk",
+    "mock",
+    "unit-testing"
+  ],
+  "author": "Tyler Brock, Roddy Lindsay",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hustle/parse-mockdb/issues"
+  },
+  "homepage": "https://github.com/Hustle/parse-mockdb",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-airbnb": "^10.0.1",
+    "eslint-plugin-import": "^1.14.0",
+    "eslint-plugin-jsx-a11y": "^2.2.0",
+    "eslint-plugin-react": "^6.2.0",
+    "mocha": "^2.2.5",
+    "parse": "^2.0.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "parserOptions": {
+      "ecmaVersion": 5
+    },
+    "env": {
+      "node": true,
+      "mocha": true
+    },
+    "rules": {
+      "no-param-reassign": "off",
+      "no-underscore-dangle": "off",
+      "no-console": "off",
+      "new-cap": "off",
+      "strict": "off",
+      "prefer-rest-params": "off"
+    }
+  },
+  "peerDependencies": {
+    "parse": "^2.0.0"
+  }
+}

@@ -1,0 +1,113 @@
+body {
+	background-color: #eee;
+	color: #333;
+	font-family: Verdana, "BitStream vera Sans", Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0 0 1em 0;
+	line-height: 1.4em;
+}
+
+a, a:link, a:visited {
+	color: #159;
+	transition: color .5s;
+}
+
+a:hover, a:active {
+	color: #195;
+}
+
+.main {
+	box-sizing: border-box;
+	margin: 1em;
+}
+
+label {
+	display: block;
+	margin: 1em 0 0 0;
+	width: 20em;
+	max-width: 100%;
+}
+
+label:first-child {
+	margin-top: 0;
+}
+
+input, textarea, button {
+	font-size: 1em;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+input, textarea {
+	width: 100%;
+	max-width: 100%;
+	padding: .2em;
+	background-color: #eee;
+	border: 1px solid #aaa;
+}
+
+textarea {
+	height: 10em;
+}
+
+button {
+	font-size: 1em;
+	padding: .2em 1em;
+	border: 2px outset #aaa;
+	margin: 1em 0 0 0;
+}
+
+button:active {
+	border-style: inset;
+}
+
+.content-box {
+	border: 1px solid #aaa;
+	border-radius: 4px;
+	margin: 1em 0 1em 60px;
+}
+
+.content-header {
+	padding: 0.5em;
+	background-color: #ddd;
+	border-bottom: 1px solid #aaa;
+	border-radius: 4px 4px 0 0;
+}
+
+.content-header h2 {
+	margin: .25em 0;
+}
+
+.meta p {
+	font-size: 0.75em;
+	margin: 0;
+}
+
+.content-body {
+	padding: 0.5em;
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+}
+
+.content-body p:last-child {
+	margin-bottom: 0;
+}
+
+.content-avatar {
+	float: left;
+	border-radius: 4px;
+}
+
+/**********************************************************************/
+
+@media (min-width: 52em) {
+	.main {
+		max-width: 50em;
+		margin: 1em auto;
+	}
+}

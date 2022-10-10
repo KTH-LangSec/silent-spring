@@ -1,0 +1,56 @@
+{
+  "_from": "asciitable.js@1.0.2",
+  "_id": "asciitable.js@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha1-SPXhTWq1Nz9yW85ipbn9yD7B90g=",
+  "_location": "/asciitable.js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "asciitable.js@1.0.2",
+    "name": "asciitable.js",
+    "escapedName": "asciitable.js",
+    "rawSpec": "1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "1.0.2"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/asciitable.js/-/asciitable.js-1.0.2.tgz",
+  "_shasum": "48f5e14d6ab5373f725bce62a5b9fdc83ec1f748",
+  "_spec": "asciitable.js@1.0.2",
+  "_where": "/home/lsong18/packages/pp/packages/﻿asciitable.js@1.0.2",
+  "author": {
+    "name": "Victor Nunes",
+    "email": "vitimus@gmail.com",
+    "url": "http://vitim.us"
+  },
+  "bugs": {
+    "url": "https://github.com/victornpb/asciitable.js/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Generate a ASCII Table from a bidimensional array of strings",
+  "homepage": "https://github.com/victornpb/asciitable.js#readme",
+  "keywords": [
+    "ASCII",
+    "Table",
+    "Array",
+    "Matrix",
+    "Strings"
+  ],
+  "license": "Apache-2.0",
+  "main": "asciitable.umd.js",
+  "name": "asciitable.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victornpb/asciitable.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Ok: no test specified\" && exit 0"
+  },
+  "version": "1.0.2"
+}
