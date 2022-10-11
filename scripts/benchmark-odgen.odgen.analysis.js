@@ -20,7 +20,7 @@ const odgenDir = '/root/projs/ODGen';
 const odgenPath = path.join(odgenDir, 'odgen.py');
 const ppStuffDir = '/root/projs/silent-spring';
 const serverSideDir = path.join(ppStuffDir, 'benchmark-odgen');;
-const reportPath = path.join(ppStuffDir, 'benchmark-odgen.odgen.md');
+const reportPath = path.join(ppStuffDir, 'raw-data', 'benchmark-odgen.odgen.md');
 
 
 //argv._ = ["deep_defaults_lib"] //["dot_object_lib"] // for debug

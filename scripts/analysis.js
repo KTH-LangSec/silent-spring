@@ -3,6 +3,8 @@ const parse = require('csv-parse/lib/sync')
 const { execSync } = require('child_process');
 const path = require('path');
 
+const codeql = '/root/codeql-linux64/codeql/codeql'
+
 function ExistsDb(dbPath) {
   return fs.existsSync(dbPath);
 }
@@ -80,7 +82,6 @@ exclude:**/compress/`
     env.LGTM_INDEX_FILTERS += '\nexclude:node_modules\nexclude:**/node_modules/typescript/'
   }
 
-  const codeql = "codeql.exe";
   const dbDir = path.dirname(dbPath);
   if (!fs.existsSync(dbDir)){
     fs.mkdirSync(dbDir);
@@ -94,9 +95,9 @@ exclude:**/compress/`
 
 function AnalyzeDbRaw(dbPath, queryPath, options = {}) {
   try {
-    const outputPath = options.outputPath || ".\\output.csv";
-    const libPath = options.libPath || "..\\codeql\\ql";
-    const codeql = options.codeql || "codeql.exe";
+    const outputPath = options.outputPath || "./output.csv";
+    const libPath = options.libPath || "../codeql/ql";
+    const codeqlPath = options.codeql || codeql;
 
     if (!options.outputPath && fs.existsSync(outputPath)) {
       fs.unlinkSync(outputPath);
@@ -105,7 +106,7 @@ function AnalyzeDbRaw(dbPath, queryPath, options = {}) {
     if (!fs.existsSync(outputPath)) {
       //var result = execSync(`${codeql} query run --database=${dbPath} --search-path=${libPath} -- ${queryPath}`).toString();
       //codeql database analyze db\\js-tests.db js-queries\\PrototypePolluting.ql --format=csv --output=test.csv --search-path=codeql
-      execSync(`${codeql} database analyze ${dbPath} ${queryPath} --search-path=${libPath} --format=csv --output=${outputPath} --timeout=1200 --threads=0 --ram=10024 --rerun --quiet`);
+      execSync(`${codeqlPath} database analyze ${dbPath} ${queryPath} --search-path=${libPath} --format=csv --output=${outputPath} --timeout=1200 --threads=0 --ram=10024 --rerun --quiet`);
     }
 
     const rows = parse(fs.readFileSync(outputPath), {
