@@ -68,16 +68,6 @@ const data = libDirs.map(libDir => {
     }
   }
 
-  // TODO: merge all .PoC.expected files
-  // const expectedResultPath = 
-  //   path.join(
-  //     serverSideDir,
-  //     libDir,
-  //     fs.readdirSync(path.join(serverSideDir, libDir), { withFileTypes: true })
-  //       .filter(fileEx => fileEx.isFile())
-  //       .filter(fileEx => fileEx.name.endsWith('.PoC.expected'))[0]
-  //       .name);
-
   try {
     console.info(`Analyzing ${dbPath} ...`);
     const expectedResult = undefined; //ParseExpectedResult(expectedResultPath);
