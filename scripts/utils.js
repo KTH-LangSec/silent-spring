@@ -17,7 +17,8 @@ function resolveLibDirs(paths, root) {
 
       return path.resolve(p);
     })
-    .filter(p => p != undefined);
+    .filter(p => p != undefined)
+    .sort((a, b) => a.localeCompare(b, "en", { ignorePunctuation: true }));
 }
 
 function extractLibDirs(paths, root) {
@@ -37,7 +38,8 @@ function findLibDirs(root) {
             .split(/\r?\n/)
             .map(row => row.trim())
             .some(row => row != '')))
-    .map(dirEx => dirEx.name);
+    .map(dirEx => dirEx.name)
+    .sort((a, b) => a.localeCompare(b, "en", { ignorePunctuation: true }));
 }
 
 const STACK_LINE_REGEX = /([^\0 !$`"'&*\(\)\[\]+;]+:\d+:\d+)/;
