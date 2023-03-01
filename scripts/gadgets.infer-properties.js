@@ -35,4 +35,4 @@ function analyzeProps(targetDir) {
 
 const props = analyzeProps(nodeSrcPath)
 console.log("Total properties: " + props.length)
-fs.writeFileSync("../raw-data/nodejs-all-props.json", JSON.stringify(props));
+fs.writeFileSync("../raw-data/nodejs-properties.json", JSON.stringify(props));

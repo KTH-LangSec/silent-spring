@@ -378,8 +378,8 @@ function BuildHeader(dataOnly) {
     return "Package        | Exported Func <br/> Priority <br/> TP | Exported Func <br/> Priority <br/> FP | Any Func <br/> Priority <br/> TP | Any Func <br/> Priority <br/> FP | Exported Func <br/> General <br/> TP | Exported Func <br/> General <br/> FP | Any Func <br/> General <br/> TP | Any Func <br/> General <br/> FP \n" +
            "---------------|---------------------------------------|---------------------------------------|----------------------------------|----------------------------------|--------------------------------------|--------------------------------------|---------------------------------|----------------------------------";
   else
-    return "Package        | Exported Func :crown: | Any Func :crown: | Exported Func | Any Func \n" +
-           "---------------|---------00------------|------------------|---------------|----------";
+    return "Package        | Exported Func <br/> Priority | Any Func <br/> Priority | Exported Func <br/> General | Any Func <br/> General \n" +
+           "---------------|------------------------------|-------------------------|-----------------------------|------------------------";
 }
 
 function BuildBaselineHeader() {
