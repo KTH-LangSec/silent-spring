@@ -11,7 +11,7 @@ function poluteAll() {
     let proto = Object.prototype;
     for (let i = 0; i < props.length; i++) {                
         let currProp = props[i];
-        if (!proto.hasOwnProperty(currProp) && currProp != "get" && props[i] != "set" && props[i] != "writable" && props[i] != "enumerable" && props[i] != "value" && props[i] != "prototype" &&  props[i] != "__proto__")
+        if (!proto.hasOwnProperty(currProp) && currProp != "get" && props[i] != "set" && props[i] != "writable" && props[i] != "enumerable" && props[i] != "value" && props[i] != "prototype" &&  props[i] != "__proto__" &&  props[i] != 4)
             Object.defineProperty(proto, currProp, { get: function() { if(this[currProp + "cs"]) return this[currProp + "cs"]; if (currProp != "configurable" && !banned.includes(currProp)) accessed.add(currProp); return undefined; }, set: function(val){ this[currProp + "cs"] = val} });
     }
 }
@@ -63,7 +63,6 @@ if (argv.length === 0 || argv[0] === 'spawnSync') {
     try {
         poluteAll();
         require("bytes")
-        //require("./foox.js")
     }catch(e) {
         console.log(e)
     }
