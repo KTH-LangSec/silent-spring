@@ -9,6 +9,7 @@ let accessed = new Set();
 console.log("Starting")
 function poluteAll() {
     let proto = Object.prototype;
+    props.push("contextExtensions");
     for (let i = 0; i < props.length; i++) {                
         let currProp = props[i];
         if (!proto.hasOwnProperty(currProp) && currProp != "get" && props[i] != "set" && props[i] != "writable" && props[i] != "enumerable" && props[i] != "value" && props[i] != "prototype" &&  props[i] != "__proto__" &&  props[i] != 4)
@@ -53,6 +54,9 @@ if (argv.length === 0 || argv[0] === 'spawnSync') {
         poluteAll();
     
         vm.runInNewContext("1+1");
+        global.text = 'world' 
+        const fn = vm.compileFunction(`console.log('hello ' + text)`);
+        fn();
     }catch(e) {
         console.log(e)
     }
