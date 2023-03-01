@@ -9,7 +9,7 @@ function analyzeProps(targetDir) {
     let files = wrench.readdirSyncRecursive(targetDir);
     let props = new Set();
     files = files.filter((file) => file.match(/.*\.js$/)); 
-    console.log(files.length)
+    console.log(`JS files: ${files.length}`)
     for (let i = 0; i < files.length; i++) {
         // console.log(`${i} ${props.size}`);
         let file = files[i];
@@ -26,8 +26,7 @@ function analyzeProps(targetDir) {
                 }
             });
         } catch(e) {
-            console.log(e);
-            // best effort
+            //console.log(e);
         }
     }
     return Array.from(props);
