@@ -35,42 +35,29 @@ function findProp(cb) {
     }
 }
 
-const argv = process.argv.slice(2);
-if (argv.length === 0 || argv[0] === 'spawnSync') {
-    try {
-        const cp = require("child_process");
-        poluteAll();
-        
-        cp.spawnSync("ls");
-    }catch(e) {
-        console.log(e)
-    }
-    
-    fs.writeFileSync("../raw-data/gadgets.dynamic-analysis.spawnSync.csv", Array.from(accessed).join("\n"))
-    process.exit(1);
-} else if (argv[0] === 'vm') {
-    try {
-        const vm = require("vm");
-        poluteAll();
-    
-        vm.runInNewContext("1+1");
-        global.text = 'world' 
-        const fn = vm.compileFunction(`console.log('hello ' + text)`);
-        fn();
-    }catch(e) {
-        console.log(e)
-    }
-    
-    fs.writeFileSync("../raw-data/gadgets.dynamic-analysis.runInNewContext.csv", Array.from(accessed).join("\n"))
-    process.exit(1);
-} else if (argv[0] === 'require') {
-    try {
-        poluteAll();
-        require("bytes")
-    }catch(e) {
-        console.log(e)
-    }
+const cp = require("child_process");
+const vm = require("vm");
+poluteAll();
 
-    fs.writeFileSync("../raw-data/gadgets.dynamic-analysis.require.csv", Array.from(accessed).join("\n"))
-    process.exit(1);
-} 
+try {
+    cp.spawnSync("ls");
+}catch(e) {
+    console.log(e)
+}
+
+try {
+    vm.runInNewContext("1+1");
+    global.text = 'world' 
+    const fn = vm.compileFunction(`console.log('hello ' + text)`);
+    fn();
+}catch(e) {
+    console.log(e)
+}
+
+try {
+    require("bytes");
+}catch(e) {
+    console.log(e)
+}
+
+fs.writeFileSync("../raw-data/gadgets.dynamic-analysis.csv", Array.from(accessed).join("\n"))
