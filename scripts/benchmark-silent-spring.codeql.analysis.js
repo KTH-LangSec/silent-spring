@@ -27,7 +27,7 @@ var argv = require('minimist')(process.argv.slice(2), {
 const serverSideDir="../benchmark-silent-spring";
 const dbDir="../db";
 const queryDir="../codeql/js-queries";
-const reportPath="../raw-data/benchmark-silent-spring.codeql.md"
+let reportPath="../raw-data/benchmark-silent-spring.codeql.md"
 
 //argv._ = ["dot_object_lib"] // for debug
 
@@ -37,6 +37,7 @@ let libDirs = argv._ && argv._.length > 0
 
 if (argv.limit) {
   libDirs = libDirs.slice(0, argv.limit);
+  reportPath="../raw-data/benchmark-silent-spring.codeql.limit.md"
 }
 
 console.info(`Run at ${new Date().toLocaleString()}`);

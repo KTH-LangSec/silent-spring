@@ -201,21 +201,6 @@ function SimpleReport(result, expectedResult) {
     falsePositiveCases.forEach(item => {
       console.info(`${item}`);
     });
-
-    // var summary = {};
-    // falsePositiveCases.forEach(item => {
-    //   var fileName = item.split(':')[0];
-    //   if (summary[fileName] === undefined) {
-    //     summary[fileName] = 1;
-    //   }
-    //   else {
-    //     summary[fileName]++;
-    //   }
-    // });
-
-    // Object.entries(summary).forEach(item => {
-    //   console.info(`${item[0]}: ${item[1]}`);
-    // });
   }
 
 
@@ -390,24 +375,24 @@ function MarkdownReport2(data, intervalSec) {
 
 function BuildHeader(dataOnly) {
   if (!dataOnly)
-    return "Library        | TP: Export Func :crown: | FP: Export Func :crown: | TP: Any Func :crown: | FP: Any Func :crown: | TP: Export Func | FP: Export Func | TP: Any Func | FP: Any Func \n" +
-           "---------------|-------------------------|-------------------------|----------------------|----------------------|-----------------|-----------------|--------------|--------------";
+    return "Package        | Exported Func <br/> Priority <br/> TP | Exported Func <br/> Priority <br/> FP | Any Func <br/> Priority <br/> TP | Any Func <br/> Priority <br/> FP | Exported Func <br/> General <br/> TP | Exported Func <br/> General <br/> FP | Any Func <br/> General <br/> TP | Any Func <br/> General <br/> FP \n" +
+           "---------------|---------------------------------------|---------------------------------------|----------------------------------|----------------------------------|--------------------------------------|--------------------------------------|---------------------------------|----------------------------------";
   else
-    return "Library        | Export Func :crown: | Any Func :crown: | Export Func | Any Func \n" +
-           "---------------|---------------------|------------------|-------------|----------";
+    return "Package        | Exported Func :crown: | Any Func :crown: | Exported Func | Any Func \n" +
+           "---------------|---------00------------|------------------|---------------|----------";
 }
 
 function BuildBaselineHeader() {
-  return "Library        | TP: ...Assignment.ql | FP: ...Assignment.ql | TP: ...Function.ql | FP: ...Function.ql | TP: ...MergeCall.ql | FP: ...MergeCall.ql \n" +
+  return "Package        | TP: ...Assignment.ql | FP: ...Assignment.ql | TP: ...Function.ql | FP: ...Function.ql | TP: ...MergeCall.ql | FP: ...MergeCall.ql \n" +
          "---------------|----------------------|----------------------|--------------------|--------------------|---------------------|---------------------";
 }
 
 function BuildODGenHeader(dataOnly) {
   if (!dataOnly)
-    return "Library        |   TP   |   FP  |    Timeout     |\n" +
+    return "Package        |   TP   |   FP  |    Timeout     |\n" +
            "---------------|--------|-------|----------------|";
   else
-    return "Library        |   Detected Cases  |    Timeout     |\n" +
+    return "Package        |   Detected Cases  |    Timeout     |\n" +
            "---------------|-------------------|----------------|";
 }
 
@@ -693,12 +678,6 @@ function BuildTruePositiveAndFalsePositiveColumns(loc, result, expectedResult) {
   if (falseNegativeCases.length == 0) {
     // https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
     row += `:white_check_mark: (${expectedResult.size}/${expectedResult.size}) `;
-
-    // row += `*True Positive case(s):*`;
-    // expectedResult.forEach(c => {
-    //   row += `<br>${c.replace(/^(node_modules)/, '')}`;
-    // });
-
     row += ` | `;
   }
   else {
@@ -709,39 +688,11 @@ function BuildTruePositiveAndFalsePositiveColumns(loc, result, expectedResult) {
       row += `:monocle_face: (${expectedResult.size - falseNegativeCases.length}/${expectedResult.size}) `;
     }
     
-    // row += `*False Negative case(s):*`;
-    // falseNegativeCases.forEach(c => {
-    //   row += `<br>${c.replace(/^(node_modules)/, '')}`;
-    // });
-
     row += ` | `;
   }
 
-  // FP: Export Func column
-  if (falsePositiveCases.length == 0) {
-    row += `:heavy_check_mark:`;
-  }
-  else {
-    const k = 100;
-    const ploc = round2(falsePositiveCases.length / loc * k);
-    row += `(${falsePositiveCases.length}) ${ploc} per ${k} LoC`;
-    
-    // var summary = {};
-    // falsePositiveCases.forEach(item => {
-    //   var fileName = item.split(':')[0];
-    //   if (summary[fileName] === undefined) {
-    //     summary[fileName] = 1;
-    //   }
-    //   else {
-    //     summary[fileName]++;
-    //   }
-    // });
-
-    // Object.entries(summary).sort().forEach(item => {
-    //   row += `<br>${item[0].replace(/^(node_modules)/, '')} (${item[1]})`;
-    // });
-  }
-
+  // FP: Exported Func column
+  row += `${falsePositiveCases.length}`;
   return row;
 }
 
