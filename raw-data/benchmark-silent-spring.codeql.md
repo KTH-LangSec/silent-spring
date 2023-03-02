@@ -56,7 +56,7 @@ merge_recursive (58 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1
 mixin_deep (29 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 0
 mout (9337 LoC) | :white_check_mark: (2/2)  | 0 | :white_check_mark: (2/2)  | 0 | :white_check_mark: (2/2)  | 1 | :white_check_mark: (2/2)  | 1
 mpath (1839 LoC) | :white_check_mark: (1/1)  | 2 | :white_check_mark: (1/1)  | 2 | :white_check_mark: (1/1)  | 2 | :white_check_mark: (1/1)  | 2
-nconf_toml (4743 LoC) | :sos: (0/1)  | 1 | :sos: (0/1)  | 2 | :sos: (0/1)  | 3 | :sos: (0/1)  | 3
+nconf_toml (4743 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 1 | :white_check_mark: (1/1)  | 2 | :white_check_mark: (1/1)  | 2
 nested_property (97 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 1 | :white_check_mark: (1/1)  | 1
 nestie (66 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 1 | :white_check_mark: (1/1)  | 1
 nis_utils (36595 LoC) | :white_check_mark: (1/1)  | 9 | :white_check_mark: (1/1)  | 15 | :white_check_mark: (2/2)  | 18 | :white_check_mark: (2/2)  | 18
@@ -100,4 +100,4 @@ utils_extend (239 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1
 worksmith (91603 LoC) | :sos: (0/1)  | 7 | :white_check_mark: (1/1)  | 13 | :sos: (0/1)  | 19 | :white_check_mark: (1/1)  | 30
 y18n (129 LoC) | :white_check_mark: (1/1)  | 0 | :white_check_mark: (1/1)  | 1 | :white_check_mark: (3/3)  | 0 | :white_check_mark: (3/3)  | 0
 yargs-parser (677 LoC) | :white_check_mark: (2/2)  | 4 | :white_check_mark: (2/2)  | 5 | :white_check_mark: (6/6)  | 3 | :white_check_mark: (6/6)  | 3
-Total: 100 libs/ 1.9 hrs (6969 sec) | 81/100 libs<br>TP: 110 FN: 25<br>81.48 % recall | FP: 114<br>49.11 % precision | 91/100 libs<br>TP: 125 FN: 10<br>92.59 % recall | FP: 189<br>39.81 % precision | 85/100 libs<br>TP: 144 FN: 20<br>87.8 % recall | FP: 267<br>35.04 % precision | 94/100 libs<br>TP: 158 FN: 6<br>96.34 % recall | FP: 354<br>30.86 % precision | 
+Total: 100 libs/ 1.9 hrs (7009 sec) | 82/100 libs<br>TP: 111 FN: 24<br>82.22 % recall | FP: 113<br>49.55 % precision | 92/100 libs<br>TP: 126 FN: 9<br>93.33 % recall | FP: 188<br>40.13 % precision | 86/100 libs<br>TP: 145 FN: 19<br>88.41 % recall | FP: 266<br>35.28 % precision | 95/100 libs<br>TP: 159 FN: 5<br>96.95 % recall | FP: 353<br>31.05 % precision | 
