@@ -54,14 +54,18 @@ function GetDependence0(serverSideDir, libDir) {
 }
 
 function GetJSLoC(sourceDir, includeModules) {
-  const cloc = "cloc";
-  const output = execSync(
-    `${cloc} --include-lang=JavaScript,TypeScript --timeout 15 -json ` +
-    (includeModules ? '' : '--exclude-dir=node_modules ') +
-    sourceDir
-  ).toString()
+  try {
+    const cloc = "cloc";
+    const output = execSync(
+      `${cloc} --include-lang=JavaScript,TypeScript --timeout 15 -json ` +
+      (includeModules ? '' : '--exclude-dir=node_modules ') +
+      sourceDir
+    ).toString()
 
-  return JSON.parse(output).SUM.code;
+    return JSON.parse(output).SUM.code;
+  } catch(error) {
+    return undefined;
+  }
 }
 
 function CreateDb(dbPath, sourceDir, options = {}) {
@@ -502,7 +506,12 @@ function BuildODGenFooter(summary, intervalSec) {
 
 function BuildRow(libData) {
     // Library column
-    let row = `${libData.libName.replace(/(_lib)$/, '')} (${libData.loc} LoC) | `;
+    let row = `${libData.libName.replace(/(_lib)$/, '')}`;
+    if (libData.loc) {
+      row += ` (${libData.loc} LoC)`;
+    }
+
+    row += ' | ';
 
     if (libData.expectedResult) {
       libData.expectedResult.major = TruncateByLineNumber(libData.expectedResult.major);
