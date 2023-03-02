@@ -44,7 +44,8 @@ let libDirs = argv._ && argv._.length > 0
               .split(/\r?\n/)
               .map(row => row.trim())
               .some(row => row != '')))
-      .map(dirEx => dirEx.name);
+      .map(dirEx => dirEx.name)
+      .sort((a, b) => a.localeCompare(b, "en", { ignorePunctuation: true }));
 
 if (argv.limit) {
   libDirs = libDirs.slice(0, argv.limit);

@@ -383,8 +383,8 @@ function BuildHeader(dataOnly) {
 }
 
 function BuildBaselineHeader() {
-  return "Package        | TP: ...Assignment.ql | FP: ...Assignment.ql | TP: ...Function.ql | FP: ...Function.ql | TP: ...MergeCall.ql | FP: ...MergeCall.ql \n" +
-         "---------------|----------------------|----------------------|--------------------|--------------------|---------------------|---------------------";
+  return "Package        | ...Assignment.ql <br/> TP | ...Assignment.ql <br/> FP | ...Function.ql <br/> TP | ...Function.ql <br/> FP | ...MergeCall.ql <br/> TP | ...MergeCall.ql <br/> FP \n" +
+         "---------------|---------------------------|---------------------------|-------------------------|-------------------------|--------------------------|--------------------------";
 }
 
 function BuildODGenHeader(dataOnly) {
