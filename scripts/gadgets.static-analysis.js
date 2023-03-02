@@ -1,4 +1,6 @@
 const {
+  ExistsDb,
+  CreateDb,
   AnalyzeDb4Gadgets,
   MarkdownGadgetHeaderReport,
   MarkdownGadgetRowReport,
@@ -21,15 +23,15 @@ const sourcePath="../benchmark-nodejs/lib"
 const queryDir="../codeql/js-queries"
 const propertiesPath="../raw-data/gadgets.dynamic-analysis.csv"
 const reportPath="../raw-data/gadgets.static-analysis.md"
-const dataDir="../raw-data/gadgets.tmp/"
+const dataDir="../raw-data/gadgets.static-analysis.tmp/"
 
 if (!fs.existsSync(dataDir)){
   fs.mkdirSync(dataDir);
 }
 
-const properties = fs.readFileSync(propertiesPath).split("\n");
+const properties = fs.readFileSync(propertiesPath).toString().split('\n').map(x => x.trim('\r')).filter(x => x != '');
 
-console.info(`Run the analysis of ${properties.lenght} properties at ${new Date().toLocaleString()}`);
+console.info(`Run the analysis of ${properties.length} properties at ${new Date().toLocaleString()}`);
 let timestamp = Date.now();
 
 MarkdownGadgetHeaderReport(reportPath);
@@ -63,7 +65,7 @@ const data = properties.map(prop => {
   fs.writeFileSync(modifiedQuery, originalQuery.replace('%PROP%', prop))
 
   try {
-    console.info(`Analyzing ${dbPath} ...`);
+    console.info(`Analyzing the property '${prop}' in '${dbPath}' ...`);
     const result = AnalyzeDb4Gadgets(
       dbPath, 
       modifiedQuery,

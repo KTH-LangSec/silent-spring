@@ -299,7 +299,7 @@ function MarkdownAppHeaderReport(path) {
 }
 
 function MarkdownGadgetHeaderReport(path) {
-  fs.appendFileSync(path, BuildGadgetHeader() + '\n');
+  fs.writeFileSync(path, BuildGadgetHeader() + '\n');
 }
 
 
