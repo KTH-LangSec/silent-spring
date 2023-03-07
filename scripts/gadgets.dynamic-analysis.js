@@ -47,7 +47,7 @@ try {
 
 try {
     vm.runInNewContext("1+1");
-    global.text = '' 
+    global.text = ' ' 
     const fn = vm.compileFunction(`console.log('' + text)`);
     fn();
 }catch(e) {
