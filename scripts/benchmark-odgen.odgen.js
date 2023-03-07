@@ -37,7 +37,7 @@ async function main() {
   console.info(`Run at ${new Date().toLocaleString()}`);
   let timestamp = Date.now();
 
-  MarkdownODGenHeaderReport(reportPath);
+  MarkdownODGenHeaderReport(reportPath, true);
 
   async function Analyze(libDir) {
     try {

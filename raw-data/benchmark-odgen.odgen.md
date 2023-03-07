@@ -1,5 +1,5 @@
-Package        |   TP   |   FP  |    Timeout     |
----------------|--------|-------|----------------|
+Package        |   Detected Cases  |    Timeout     |
+---------------|-------------------|----------------|
 asciitable.js@1.0.2 (170 LoC) | asciitable.umd.js:50 |  :red_circle:  |
 bayrell-nodejs@0.8.0 (94 LoC) |  |  :red_circle:  |
 blindfold@1.0.1 (51 LoC) | index.js:33 | :green_circle: |
@@ -19,4 +19,4 @@ node-file-cache@1.0.2 (3279 LoC) | lib/index.js:106 | :green_circle: |
 object-helpers@0.0.4 (148 LoC) | index.js:51 | :green_circle: |
 parse-mockdb@0.4.0 (2313 LoC) | src/parse-mockdb.js:210 | :green_circle: |
 propper@1.0.3 (130 LoC) | index.js:44 | :green_circle: |
-Total: 19 libs/ 3.2 hrs (11375 sec) | 0/19 libs<br>TP: NaN FN: NaN<br>NaN % recall | FP: NaN<br>NaN % precision | 31.58% libs're<br>timed out | 
+Total: 19 libs/ 3.2 hrs (11375 sec) |  | 31.58% libs're<br>timed out | 
