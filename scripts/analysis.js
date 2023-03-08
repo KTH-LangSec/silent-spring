@@ -3,7 +3,7 @@ const parse = require('csv-parse/lib/sync')
 const { execSync } = require('child_process');
 const path = require('path');
 
-const codeql = '/root/codeql-linux64/codeql/codeql'
+const codeql = 'codeql'
 
 function ExistsDb(dbPath) {
   return fs.existsSync(dbPath);
