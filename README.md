@@ -2,7 +2,7 @@
 This artifact implements static code analysis for detecting prototype pollution vulnerabilities and gadgets in server-side JavaScript libraries and applications, including the Node.js source code. The analysis builds on GitHub's CodeQL framework to identify prototype pollution sinks and gadgets. We evaluate precision and recall metrics for prototype pollution detection in comparison with existing CodeQL analysis as well as the tool ODGen. Further, we evaluate the capabilities of our tool, in combination with dynamic analysis, to detect gadgets in a range of popular applications, including the Node.js source code. Finally, we evaluate the prevalence of detected gadgets on a dataset of popular libraries.
 
 ## Academic Publication
-The artifact describes the experiments from the paper "Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js". If you use the paper and/or the experiments results for academic research, we encourage you to cite it as:
+The artifact describes the experiments from the paper ["Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js"](/silent-spring-full-version.pdf). If you use the paper and/or the experiments results for academic research, we encourage you to cite it as:
 
 ```
 @inproceedings{SilentSpring2023,
